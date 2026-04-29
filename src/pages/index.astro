@@ -1,0 +1,35 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Container from '../components/layout/Container.astro';
+import ProductCard from '../components/product/ProductCard.astro';
+import products from '../data/products.json';
+---
+
+<MainLayout title="Home">
+	<section class="py-20 overflow-hidden relative">
+        <!-- Background Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-brand-primary/10 blur-[120px] rounded-full -z-10"></div>
+        
+		<Container>
+			<div class="max-w-3xl mb-20">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold tracking-widest text-brand-secondary uppercase mb-6">
+                    Next-Gen E-commerce
+                </span>
+				<h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.9]">
+					Błyskawica w Twojej <br/> 
+					<span class="text-gradient">Przeglądarce.</span>
+				</h1>
+				<p class="text-xl text-gray-400 leading-relaxed max-w-xl">
+					Doświadcz prędkości, której nie oferuje żaden tradycyjny sklep. 
+                    Zbudowany w architekturze Headless dla ekstremalnej wydajności i UX.
+				</p>
+			</div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {products.map(product => (
+                    <ProductCard product={product} />
+                ))}
+            </div>
+		</Container>
+	</section>
+</MainLayout>

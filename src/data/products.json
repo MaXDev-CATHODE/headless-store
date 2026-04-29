@@ -1,0 +1,46 @@
+[
+  {
+    "id": "lightning-keyboard-v1",
+    "name": "Lightning Keyboard V1",
+    "description": "Najszybsza klawiatura mechaniczna na świecie z opóźnieniem 0.1ms.",
+    "longDescription": "Zaprojektowana dla profesjonalistów, którzy nie uznają kompromisów. Lightning Keyboard V1 to połączenie minimalistycznego designu z ekstremalną wydajnością. Wyposażona w optyczne przełączniki i w pełni programowalne podświetlenie RGB.",
+    "price": 849,
+    "currency": "zł",
+    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&q=80&w=800",
+    "category": "Akcesoria",
+    "features": ["0.1ms Latency", "Optical Switches", "PBT Keycaps"]
+  },
+  {
+    "id": "quantum-mouse-x",
+    "name": "Quantum Mouse X",
+    "description": "Myszka o wadze piórkowej (45g) z sensorem 32k DPI.",
+    "longDescription": "Quantum Mouse X redefiniuje pojęcie szybkości. Dzięki zastosowaniu struktury plastra miodu i ultra-lekkich materiałów, Twoja ręka nie poczuje zmęczenia nawet po 12 godzinach sesji. Sensor Quantum-Sense zapewnia chirurgiczną precyzję.",
+    "price": 429,
+    "currency": "zł",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=800",
+    "category": "Akcesoria",
+    "features": ["45g Weight", "32,000 DPI", "Zero-Drag Cable"]
+  },
+  {
+    "id": "sonic-headset-ultra",
+    "name": "Sonic Headset Ultra",
+    "description": "Dźwięk przestrzenny 7.1 z aktywną redukcją szumów AI.",
+    "longDescription": "Sonic Headset Ultra pozwala usłyszeć to, czego inni nie słyszą. Dzięki zaawansowanym przetwornikom neodymowym i technologii AI Noise Cancelling, Twój głos będzie krystalicznie czysty, a pozycjonowanie przeciwników w grze stanie się instynktowne.",
+    "price": 1299,
+    "currency": "zł",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800",
+    "category": "Audio",
+    "features": ["7.1 Surround", "AI Noise Cancelling", "50h Battery"]
+  },
+  {
+    "id": "titan-monitor-pro",
+    "name": "Titan Monitor Pro 360",
+    "description": "Odświeżanie 360Hz na matrycy OLED 4K.",
+    "longDescription": "Titan Monitor Pro to szczyt inżynierii wyświetlaczy. Matryca OLED zapewnia nieskończony kontrast i zerowy czas reakcji, a odświeżanie 360Hz sprawia, że obraz jest płynniejszy niż rzeczywistość. Idealny do e-sportu i pracy kreatywnej.",
+    "price": 4999,
+    "currency": "zł",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=800",
+    "category": "Wyświetlacze",
+    "features": ["360Hz Refresh", "4K OLED", "0.03ms GtG"]
+  }
+]
