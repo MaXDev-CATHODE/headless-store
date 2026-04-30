@@ -6,7 +6,7 @@
     "longDescription": "Zaprojektowana dla profesjonalistów, którzy nie uznają kompromisów. Lightning Keyboard V1 to połączenie minimalistycznego designu z ekstremalną wydajnością. Wyposażona w optyczne przełączniki i w pełni programowalne podświetlenie RGB.",
     "price": 849,
     "currency": "zł",
-    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&q=80&w=800",
+    "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&q=80&w=1200",
     "category": "Akcesoria",
     "features": ["0.1ms Latency", "Optical Switches", "PBT Keycaps"]
   },
@@ -17,7 +17,7 @@
     "longDescription": "Quantum Mouse X redefiniuje pojęcie szybkości. Dzięki zastosowaniu struktury plastra miodu i ultra-lekkich materiałów, Twoja ręka nie poczuje zmęczenia nawet po 12 godzinach sesji. Sensor Quantum-Sense zapewnia chirurgiczną precyzję.",
     "price": 429,
     "currency": "zł",
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=800",
+    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=1200",
     "category": "Akcesoria",
     "features": ["45g Weight", "32,000 DPI", "Zero-Drag Cable"]
   },
@@ -28,7 +28,7 @@
     "longDescription": "Sonic Headset Ultra pozwala usłyszeć to, czego inni nie słyszą. Dzięki zaawansowanym przetwornikom neodymowym i technologii AI Noise Cancelling, Twój głos będzie krystalicznie czysty, a pozycjonowanie przeciwników w grze stanie się instynktowne.",
     "price": 1299,
     "currency": "zł",
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1200",
     "category": "Audio",
     "features": ["7.1 Surround", "AI Noise Cancelling", "50h Battery"]
   },
@@ -39,8 +39,52 @@
     "longDescription": "Titan Monitor Pro to szczyt inżynierii wyświetlaczy. Matryca OLED zapewnia nieskończony kontrast i zerowy czas reakcji, a odświeżanie 360Hz sprawia, że obraz jest płynniejszy niż rzeczywistość. Idealny do e-sportu i pracy kreatywnej.",
     "price": 4999,
     "currency": "zł",
-    "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&q=80&w=800",
+    "image": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?auto=format&fit=crop&q=80&w=1200",
     "category": "Wyświetlacze",
     "features": ["360Hz Refresh", "4K OLED", "0.03ms GtG"]
+  },
+  {
+    "id": "nebula-chair-pro",
+    "name": "Nebula Gaming Chair",
+    "description": "Ergonomiczny fotel z chłodzeniem aktywnym pleców.",
+    "longDescription": "Nebula Gaming Chair to nie tylko fotel, to Twoje centrum dowodzenia. Wyposażony w system aktywnego chłodzenia i 4-kierunkowe wsparcie lędźwiowe, zapewnia komfort, o jakim marzą Twoje plecy.",
+    "price": 2499,
+    "currency": "zł",
+    "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&q=80&w=1200",
+    "category": "Meble",
+    "features": ["Active Cooling", "4D Armrests", "Memory Foam"]
+  },
+  {
+    "id": "warp-drive-ssd",
+    "name": "Warp Drive NVMe 4TB",
+    "description": "Prędkość odczytu 14,000 MB/s na PCIe Gen 5.",
+    "longDescription": "Czas ładowania? To pojęcie przestaje istnieć z Warp Drive. Najnowszy kontroler i kości NAND zapewniają transfery, które zawstydzają konkurencję. W zestawie z masywnym radiatorem.",
+    "price": 1899,
+    "currency": "zł",
+    "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=1200",
+    "category": "Komponenty",
+    "features": ["PCIe Gen 5", "14,000 MB/s", "RGB Heatsink"]
+  },
+  {
+    "id": "cyber-desk-elite",
+    "name": "Cyber Desk Elite",
+    "description": "Biurko z wbudowanym ekranem dotykowym v blacie.",
+    "longDescription": "Cyber Desk Elite to przyszłość pracy. Blat wykonany z hartowanego szkła skrywa pod sobą 24-calowy panel dotykowy, który integruje się z Twoim systemem. Elektryczna regulacja wysokości w standardzie.",
+    "price": 7999,
+    "currency": "zł",
+    "image": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&q=80&w=1200",
+    "category": "Meble",
+    "features": ["Built-in Screen", "Electric Height", "Glass Surface"]
+  },
+  {
+    "id": "nova-pad-extended",
+    "name": "Nova Pad Extended",
+    "description": "Podkładka pod mysz z bezprzewodowym ładowaniem 15W.",
+    "longDescription": "Nova Pad Extended to nie tylko powierzchnia dla Twojej myszy. Cała lewa strona podkładki to strefa szybkiego ładowania bezprzewodowego dla Twojego telefonu lub myszki.",
+    "price": 299,
+    "currency": "zł",
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&q=80&w=1200",
+    "category": "Akcesoria",
+    "features": ["15W Wireless Charge", "Stitched Edges", "Waterproof"]
   }
 ]

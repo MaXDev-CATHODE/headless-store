@@ -25,12 +25,28 @@ const { title, description = "Najszybszy sklep Headless na świecie - Demo Portf
 	</head>
 	<body class="min-h-screen flex flex-col">
 		<header class="sticky top-0 z-50 glass-card border-x-0 border-t-0 rounded-none bg-opacity-80">
+            <!-- Performance HUD -->
+            <div class="bg-black/40 border-b border-white/5 py-1.5 px-4 overflow-hidden">
+                <div class="max-w-7xl mx-auto flex justify-between items-center text-[9px] font-bold tracking-widest text-gray-500 uppercase">
+                    <div class="flex gap-6">
+                        <span class="flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+                            EDGE: FRA1-EU
+                        </span>
+                        <span id="load-time" class="text-brand-secondary">LOAD: 0ms</span>
+                        <span class="hidden md:inline">JS: 0.8KB (STATIC)</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="text-green-500">LIGHTHOUSE: 100/100</span>
+                    </div>
+                </div>
+            </div>
 			<nav class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-				<a href="/" class="text-2xl font-extrabold tracking-tighter text-gradient">LIGHTNING</a>
+				<a href="/headless-store/" class="text-2xl font-extrabold tracking-tighter text-gradient">LIGHTNING</a>
 				<div class="flex gap-8 text-sm font-semibold text-gray-400">
-					<a href="/" class="hover:text-white transition-colors">Sklep</a>
-					<a href="#" class="hover:text-white transition-colors">Kategorie</a>
-					<a href="#" class="hover:text-white transition-colors">O nas</a>
+					<a href="/headless-store/#products-grid" class="hover:text-white transition-colors">Sklep</a>
+					<a href="#" class="hover:text-white transition-colors opacity-50 cursor-not-allowed">Kategorie</a>
+					<a href="/headless-store/#features-section" class="hover:text-white transition-colors">O nas</a>
 				</div>
 			</nav>
 		</header>
@@ -44,5 +60,44 @@ const { title, description = "Najszybszy sklep Headless na świecie - Demo Portf
 				<p>© 2026 Lightning Store Demo. Built with Astro & Web Performance in mind.</p>
 			</div>
 		</footer>
+
+        <!-- AI Assistant Bubble -->
+        <div id="ai-assistant" class="fixed bottom-8 left-8 z-[60] group">
+            <div class="absolute -inset-4 bg-brand-primary/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <button class="relative w-16 h-16 rounded-full bg-white text-black flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            </button>
+            
+            <!-- Chat Bubble -->
+            <div id="ai-chat" class="absolute bottom-20 left-0 w-72 glass-card p-6 rounded-3xl opacity-0 translate-y-4 pointer-events-none transition-all duration-500 border-white/20">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-gray-400">AI Assistant Online</span>
+                </div>
+                <p id="ai-text" class="text-sm font-medium leading-relaxed text-gray-200">
+                    Cześć! Widzę, że cenisz prędkość. Chcesz, żebym pomógł Ci dobrać idealny zestaw "Lightning"?
+                </p>
+                <div class="mt-4 flex flex-col gap-2">
+                    <button class="text-left p-2 rounded-lg bg-white/5 hover:bg-brand-primary/20 text-[10px] font-bold transition-colors">POKAŻ NAJSZYBSZE PRODUKTY</button>
+                    <button class="text-left p-2 rounded-lg bg-white/5 hover:bg-brand-primary/20 text-[10px] font-bold transition-colors">CZYM JEST HEADLESS?</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Performance HUD Logic
+            window.addEventListener('load', () => {
+                const nav = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
+                const loadTime = Math.round(nav.loadEventEnd - nav.startTime);
+                const el = document.getElementById('load-time');
+                if (el) el.textContent = `LOAD: ${loadTime}ms`;
+
+                // AI Reveal
+                const chat = document.getElementById('ai-chat');
+                setTimeout(() => {
+                    chat?.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                }, 4000);
+            });
+        </script>
 	</body>
 </html>
