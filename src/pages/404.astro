@@ -1,0 +1,28 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="404 - Nie znaleziono strony">
+    <div class="min-h-[70vh] flex items-center justify-center">
+        <div class="text-center">
+            <div class="relative inline-block mb-8">
+                <h1 class="text-[12rem] font-black italic tracking-tighter text-white/5 leading-none">404</h1>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="p-8 glass-card rounded-full animate-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-primary"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="text-4xl font-extrabold mb-4">Ups! Wywiało nas z trasy.</h2>
+            <p class="text-gray-400 mb-12 max-w-md mx-auto">
+                Strona, której szukasz, nie istnieje lub została przeniesiona do innej galaktyki wydajności.
+            </p>
+            
+            <a href="/headless-store/" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-2xl hover:scale-105 transition-transform active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                WRÓĆ DO SKLEPU
+            </a>
+        </div>
+    </div>
+</MainLayout>
